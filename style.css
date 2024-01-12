@@ -1,0 +1,139 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: 0;
+    transition: all 0.5s ease;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #078;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.box {
+    position: relative;
+    width: auto;
+    height: auto;
+    border-radius: 20px;
+    /* display: flex; */
+    box-shadow: 0 0 30px #000;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.brand {
+    font-size: 50px;
+    margin: 20px;
+    transition: 0.5s ease;
+}
+
+.brand:hover {
+    transform: scale(1.1);
+}
+
+/* #theme-toggler {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    color: #fff;
+    cursor: pointer;
+    z-index: 1;
+} */
+/* 
+.theme-toggler.active {
+    color:  #333;
+} */
+
+/* .theme-toggler.active::before {
+    background-color: #fff;
+} */
+
+/* .theme-toggler::before {
+    content: '';
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    top: 50%;
+    transform: (-50%,-50%);
+    border-radius: 50%;
+    background-color: #333;
+    z-index: -1;
+} */
+
+#display {
+    margin: 0 10px;
+    height: 150px;
+    width: auto;
+    max-width: 270px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    font-size: 30px;
+    margin-bottom: 20px;
+    overflow-x: scroll;
+    border: 1px solid black;
+}
+
+#display::-webkit-scrollbar {
+    display: block;
+    height: 3px;
+}
+
+button {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    margin: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 200ms ease;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+button#equal {
+    height: 130px;
+}
+
+
+
+.box {
+    background-color: #fff;
+    border: 0;
+}
+
+.box #display {
+    color: #0a1e23;
+}
+
+.box button#clear {
+    background-color: #757575;
+    color: #000;
+}
+
+.box button.btn-number {
+    background-color: #c3eaff;
+    color: #000;
+}
+
+.box button.btn-operater  {
+    background-color: red;
+    color: #000;
+}
+
+.box button.equal {
+    background-color: #0a1e23;
+    color: #fff;
+}
